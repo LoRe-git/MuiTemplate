@@ -5,10 +5,10 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
-import MainMenuDrawer from "./MainMenuDrawer";
+import MainMenuDrawer from "./components/MainMenuDrawer";
 
-import DataTable from "./DataTable";
-import DataGridTable from "./DataGridTable";
+import DataTable from "./components/datagrids/DataTable";
+import DataGridTable from "./components/datagrids/DataGridTable";
 
 export default function ClippedDrawer() {
   return (
@@ -27,9 +27,9 @@ export default function ClippedDrawer() {
       <MainMenuDrawer />
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
-        <DataTable />
-        <Toolbar />
         <DataGridTable />
+        <Toolbar />
+        <DataTable />
         {/* <Typography paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
