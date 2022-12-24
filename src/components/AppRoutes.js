@@ -1,24 +1,25 @@
 import * as React from "react";
-import MainMenuDrawer from "./components/MainMenuDrawer";
 
-import DataTable from "./components/datagrids/DataTable";
-import DataGridTable from "./components/datagrids/DataGridTable";
-const Routes = [
+import DataTable from "./datagrids/DataTable";
+import DataGridTable from "./datagrids/DataGridTable";
+import NewComponentTemplate from "./NewComponentTemplate";
+
+const AppRoutes = [
   {
-    path: '/',
-    sidebarName: 'Home',
-    component: Home
+    path: "/",
+    sidebarName: "Dashboard",
+    component: NewComponentTemplate,
   },
   {
-    path: '/standings',
-    sidebarName: 'Standings',
-    component: Standings
+    path: "/datatable",
+    sidebarName: "Data Table",
+    component: DataTable,
   },
   {
-    path: '/teams',
-    sidebarName: 'Teams',
-    component: Teams
+    path: "/datagrid",
+    sidebarName: "Data Grid",
+    component: DataGridTable,
   },
 ];
 
-export default Routes;
+export default AppRoutes;
