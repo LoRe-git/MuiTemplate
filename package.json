@@ -10,7 +10,8 @@
     "@mui/x-data-grid-generator": "5.17.15",
     "material-table": "2.0.3",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-router-dom": "6.6.1"
   },
   "description": "https://github.com/mui/material-ui/blob/v5.11.0/docs/data/material/components/drawers/ClippedDrawer.js",
   "devDependencies": {

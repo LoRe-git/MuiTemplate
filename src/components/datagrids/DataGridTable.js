@@ -11,7 +11,7 @@ const DataGridTable = (props) => {
   const { data } = useDemoData({
     dataSet: "Employee",
     visibleFields: VISIBLE_FIELDS,
-    rowLength: 100
+    rowLength: 100,
   });
 
   const customColumn = {
@@ -36,7 +36,7 @@ const DataGridTable = (props) => {
       };
 
       return <Button onClick={onClick}>Click</Button>;
-    }
+    },
   };
   // Otherwise filter will be applied on fields such as the hidden column id
   const columns = React.useMemo(
@@ -60,8 +60,8 @@ const DataGridTable = (props) => {
         componentsProps={{
           toolbar: {
             showQuickFilter: true,
-            quickFilterProps: { debounceMs: 500 }
-          }
+            quickFilterProps: { debounceMs: 500 },
+          },
         }}
       />
     </Box>
