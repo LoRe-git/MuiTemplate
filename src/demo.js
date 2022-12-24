@@ -5,10 +5,10 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
-import MainMenuDrawer from "./MainMenuDrawer";
+import MainMenuDrawer from "./components/MainMenuDrawer";
 
-import DataTable from "./DataTable";
-import DataGridTable from "./DataGridTable";
+import DataTable from "./components/datagrids/DataTable";
+import DataGridTable from "./components/datagrids/DataGridTable";
 
 export default function ClippedDrawer() {
   return (
