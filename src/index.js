@@ -1,12 +1,16 @@
 import * as React from "react";
-import ReactDOM from "react-dom/client";
-import { StyledEngineProvider } from "@mui/material/styles";
+import { render } from "react-dom";
 import Demo from "./demo";
+import { Provider } from "react-redux";
 
-ReactDOM.createRoot(document.querySelector("#root")).render(
+import configureStore from "./store";
+
+const root = document.getElementById("root");
+render(
   <React.StrictMode>
-    <StyledEngineProvider injectFirst>
+    <Provider store={configureStore()}>
       <Demo />
-    </StyledEngineProvider>
-  </React.StrictMode>
+    </Provider>
+  </React.StrictMode>,
+  root
 );
