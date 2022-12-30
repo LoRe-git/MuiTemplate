@@ -10,6 +10,11 @@ export default (state, action) => {
       return {
         loggedin: !action.payload,
       };
+    case TYPES.SET_TABLE_DATA:
+      return {
+        ...state,
+        tableData: action.payload,
+      };
     default:
       return state;
   }
